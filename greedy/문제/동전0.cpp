@@ -9,7 +9,7 @@ int main() {
     for(int i = 0; i < n; i++) {
         cin >> arr[i];
     }
-    for(int i = n - 1; i >= 0; i--) {
+    for(int i = n - 1; i >= 0; i--) { // 가장 큰 동전부터 가장 최선의 선택
         sum += m / arr[i];
         m = m % arr[i];
     }
